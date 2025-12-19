@@ -27,6 +27,8 @@ from pydantic import BaseModel
 import subprocess
 import re
 from typing import List, Optional
+from fastapi.middleware.cors import CORSMiddleware
+
 
 
 app = FastAPI(
