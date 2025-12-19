@@ -44,6 +44,15 @@ ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
 ]
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,   # use ["*"] temporarily if you want quick testing
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 class SearchRequest(BaseModel):
     """Payload for the search request."""
 
