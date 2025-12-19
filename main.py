@@ -39,7 +39,11 @@ app = FastAPI(
     version="0.1.0",
 )
 
-
+ALLOWED_ORIGINS = [
+    "https://synapseworks.github.io",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
 class SearchRequest(BaseModel):
     """Payload for the search request."""
 
