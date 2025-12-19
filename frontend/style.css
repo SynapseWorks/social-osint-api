@@ -1,0 +1,87 @@
+/*
+ * Hack‑theme styles for the Social OSINT front‑end.
+ * Dark background, neon accents, and monospace fonts evoke a terminal feel.
+ */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #66ff66;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: #1a1a1a;
+    color: #00ff00;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #004d00;
+    color: #00ff00;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #006600;
+}
+
+#status {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #66ff66;
+}
+
+ul#results {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+ul#results li {
+    margin: 0.5rem 0;
+}
+
+ul#results a {
+    color: #00ff00;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+ul#results a:hover {
+    text-decoration: underline;
+}

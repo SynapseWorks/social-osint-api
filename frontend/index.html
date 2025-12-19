@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social OSINT Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- You can include a monospace font from Google Fonts if desired -->
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Social OSINT</h1>
+        <p>Search for public social‑media profiles by username.</p>
+        <form id="searchForm">
+            <input type="text" id="username" placeholder="Enter username" required />
+            <button type="submit">Search</button>
+        </form>
+        <div id="status"></div>
+        <ul id="results"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
